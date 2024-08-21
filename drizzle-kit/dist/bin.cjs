@@ -17312,6 +17312,7 @@ var init_utils4 = __esm({
       let res;
       try {
         res = register({
+          target: "EsNext",
           format: "cjs",
           loader: "ts"
         });
