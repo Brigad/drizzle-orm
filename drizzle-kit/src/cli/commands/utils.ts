@@ -61,8 +61,9 @@ export const safeRegister = async () => {
 	let res: { unregister: () => void };
 	try {
 		res = register({
-            target: 'EsNext',
-			format: 'cjs',
+            target: undefined,
+            // @ts-expect-error N/A
+			format: 'esnext',
 			loader: 'ts',
 		});
 	} catch {

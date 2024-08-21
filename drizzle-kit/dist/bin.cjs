@@ -17312,8 +17312,9 @@ var init_utils4 = __esm({
       let res;
       try {
         res = register({
-          target: "EsNext",
-          format: "cjs",
+          target: void 0,
+          // @ts-expect-error N/A
+          format: "esnext",
           loader: "ts"
         });
       } catch {
